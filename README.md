@@ -1,10 +1,9 @@
 # Meteor react-toolbox-example
 
 Meteor version of [react-toolbox-example](https://github.com/react-toolbox/react-toolbox-example)
- 
-How it works (using 1.3-rc.6):
 
-1. `meteor create your-app --release 1.3-rc.6`
+### How it works (using 1.3-rc.7):
+1. `meteor create your-app --release 1.3-rc.7`
 1. `cd your-app`
 1. `npm install --save react-toolbox`
 1. `meteor add nathantreid:css-modules@1.0.0-beta.8`
