@@ -6,9 +6,6 @@ import Header from './components/header';
 import style from './style';
 
 Meteor.startup(function () {
-    // You can also include here commons if you want with import 'react-toolbox/lib/commons';
-
-
     ReactDOM.render((
       <ToolboxApp>
           <Header />
