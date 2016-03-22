@@ -15,11 +15,12 @@
       "scss"
     ],
     "globalVariables": [
+      "node_modules/react-toolbox/lib/_colors.scss",
+      { "theme-building": true },
       "client/toolbox-theme.scss"
     ],
     "outputJsFilePath": {
-      "default": "{dirname}/{basename}",
-      ".*/react-toolbox/.*": "{dirname}/{basename}"
+      "default": "{dirname}/{basename}"
     },
     "explicitIncludes": [
       "node_modules/react-toolbox"
