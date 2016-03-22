@@ -19,9 +19,7 @@
       { "theme-building": true },
       "client/toolbox-theme.scss"
     ],
-    "outputJsFilePath": {
-      "default": "{dirname}/{basename}"
-    },
+    "outputJsFilePath": "{dirname}/{basename}",
     "explicitIncludes": [
       "node_modules/react-toolbox"
     ]
