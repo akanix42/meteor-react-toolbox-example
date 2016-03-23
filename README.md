@@ -6,10 +6,20 @@ Meteor version of [react-toolbox-example](https://github.com/react-toolbox/react
 1. `meteor create your-app --release 1.3-rc.7`
 1. `cd your-app`
 1. `npm install --save react-toolbox`
-1. `meteor add nathantreid:css-modules@1.0.0-beta.8`
-1. create a folder your-app/client
-1. Place all of the files from react-toolbox-example/app in the /client folder
-1. Copy the head & body tags, minus the <link rel="stylesheet" href="react-toolbox.css"> and <script src="react-toolbox.js"></script> from react-toolbox-example/www/index.html to an index.html in the /client folder
+1. `meteor add nathantreid:css-modules@1.0.0-beta.9`
+1. Remove the `server` director
+1. Remove all files from the `client` directory
+1. Download the [react-toolbox-example](https://github.com/react-toolbox/react-toolbox-example) 
+1. Copy all of the files from react-toolbox-example/app into the /client folder
+1. Wrap the `ReactDom.render()` call in index.jsx inside `Meteor.startup()`:
+``` js
+Meteor.startup(function () {
+    ReactDOM.render((
+    // rest of ReactDOM.render call...
+});
+```
+
+1. Copy the head & body tags, minus the <link rel="stylesheet" href="react-toolbox.css"> and <script src="react-toolbox.js"></script> (Meteor will handle those) from react-toolbox-example/www/index.html to an index.html in the /client folder
 1. Add the following to packages.json:
 ``` json
     "cssModules": {
@@ -27,6 +37,7 @@ Meteor version of [react-toolbox-example](https://github.com/react-toolbox/react
         ]
       }
 ```
+1. Run meteor
 
 The `extensions` property determines which file types are handled by the plugin (default: `[ "mss" ]`).
 
