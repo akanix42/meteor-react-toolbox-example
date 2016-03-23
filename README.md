@@ -2,6 +2,11 @@
 
 Meteor version of [react-toolbox-example](https://github.com/react-toolbox/react-toolbox-example)
 
+### Getting Started
+1. Clone this repository
+1. Run `npm install && meteor`
+1. Visit `localhost:3000` in your browser
+
 ### How it works (using 1.3-rc.7):
 1. `meteor create your-app --release 1.3-rc.7`
 1. `cd your-app`
