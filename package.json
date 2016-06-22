@@ -12,6 +12,9 @@
     "react-dom": "^15.1.0",
     "react-toolbox": "^1.0.1"
   },
+  "devDependencies": {
+    "node-sass": "^3.4.2"
+  },
   "cssModules": {
     "extensions": [
       "scss"
@@ -23,8 +26,5 @@
       },
       "client/toolbox-theme.scss"
     ]
-  },
-  "devDependencies": {
-    "node-sass": "^3.4.2"
   }
 }
