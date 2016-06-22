@@ -36,10 +36,7 @@ Meteor.startup(function () {
           "node_modules/react-toolbox/lib/_colors.scss",
           { "theme-building": true },
           "client/toolbox-theme.scss"
-        ],
-        "outputJsFilePath": {
-          "node_modules/react-toolbox/.*": "{dirname}/{basename}"
-        }
+        ]
       }
 ```
 1. Run meteor
@@ -47,12 +44,3 @@ Meteor.startup(function () {
 The `extensions` property determines which file types are handled by the plugin (default: `[ "mss" ]`).
 
 The `globalVariables` property is roughly the equivalent of the toolbox-loader configured by `toolbox: { theme: }` property from the react-toolbox-example's webpack.config.js.
-
-The `outputJsFilePath` property configures the output filename used by the import statement (default: `{ "default": "{dirname}/{basename}{extname}" }`, eg. "client/styles.scss"). React-Toolbox omits the extension from the scss imports, and the scss extension isn't a default extension when importing from node_modules, so it requires the output format to be `{ "default": "{dirname}/{basename}" }`, eg. "client/styles". If you want to use the standard format for files in your project, but still use React-Toolbox, you can limit the format specifically to the react-toolbox directory using a regular expression: 
-Meteor allows you to leave off the extensions when importing files that are handled by a build plugin, so `import style from './style';` and import style from './style.scss';` are equivalent.
-However, this does not work with the node_modules directory, which supports leaving off the extension on .js and .json files, so we have to explicitly change the output format for React-Toolbox:
-``` json
-  "outputJsFilePath": {
-    ".*node_modules/react-toolbox/.*": "{dirname}/{basename}"
-  },
-```    
