@@ -1,0 +1,10 @@
+// test
+@value color from './test2.scss';
+.btn {
+    composes: btn btn-primary from global;
+    composes: color from './test2.scss';
+}
+
+.blue-kittens {
+    background-color: blue;
+}

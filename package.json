@@ -12,15 +12,29 @@
   },
   "cssModules": {
     "extensions": [
-      "scss"
+      "scss",
+      "css"
     ],
     "globalVariables": [
       "node_modules/react-toolbox/lib/_colors.scss",
       { "theme-building": true },
       "client/toolbox-theme.scss"
     ],
+    "jsClassNamingConvention": {
+      "camelCase": true
+    },
+    "cssClassNamingConvention": {
+      "replacements": [
+        "_client",
+        ["t", "b"],
+        ["e", "g", "a"]
+      ]
+    },
     "outputJsFilePath": {
       ".*node_modules/react-toolbox/.*": "{dirname}/{basename}"
-    }
+    },
+    "passthroughPaths": [
+      "bootstrap.css"
+    ]
   }
 }
