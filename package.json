@@ -36,5 +36,8 @@
     "passthroughPaths": [
       "bootstrap.css"
     ]
+  },
+  "devDependencies": {
+    "node-sass": "^3.4.2"
   }
 }
