@@ -46,7 +46,7 @@ modules@0.7.5
 modules-runtime@0.7.5
 mongo@1.1.10
 mongo-id@1.0.5
-nathantreid:css-modules@2.2.0
+nathantreid:css-modules@2.2.1-issue53.1
 nathantreid:css-modules-import-path-helpers@0.1.4
 npm-mongo@1.5.45
 observe-sequence@1.0.12
